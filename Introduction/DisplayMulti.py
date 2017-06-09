@@ -1,3 +1,10 @@
-def DisplayMulti(ArgCount = 0, *VarArgs):
-    print('You passed '+ str(ArgCount) + ' arguments.', VarArgs)
-DisplayMulti(4, 'Hello', 'me', True)
+def DisplayMulti(*VarArgs):
+    for Arg in VarArgs:
+        if Arg.upper() == 'CONT':
+            continue
+            print('Continue Argument: ' + Arg)
+        elif Arg.upper() == 'BREAK':
+            break
+            print('Break Argument: '+ Arg)
+        print('Good Argument '+ Arg)
+DisplayMulti("a", "b", "cont","c")
