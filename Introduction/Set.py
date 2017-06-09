@@ -1,0 +1,6 @@
+SetA = set(['Red','Blue','Green','Black'])
+SetB = set(['Black','Green','Yellow','Orange'])
+SetX = SetA.union(SetB)
+SetY = print(SetA.intersection(SetB))
+SetZ = print(SetA.difference(SetB))
+SetQ = print(SetA.issubset(SetX))
