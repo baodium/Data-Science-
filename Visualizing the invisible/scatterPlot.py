@@ -13,6 +13,9 @@ y3 = 25 * np.random.rand(20)
 
 y = np.concatenate((y1, y2, y3))
 
-plt.scatter(x,y, s = [100], marker='^', c='m')
+
+color_array = ['b'] * 50 + ['g'] * 50 + ['r'] * 5
+
+plt.scatter(x,y, s = [100], marker='D', c=color_array)
 
 plt.show()
